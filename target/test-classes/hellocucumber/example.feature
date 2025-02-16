@@ -1,6 +1,6 @@
-Feature: An example
+Feature: Name example
 
-  Scenario: The example
-    Given an example scenario
-    When all step definitions are implemented
-    Then the scenario passes
+  Scenario: example
+    Given my name is Shivaram
+    When I ask if it is Shivaram
+    Then Success

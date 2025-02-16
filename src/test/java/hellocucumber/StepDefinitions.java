@@ -1,21 +1,28 @@
 package hellocucumber;
 
-import io.cucumber.java.en.*;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
-import static org.junit.jupiter.api.Assertions.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class StepDefinitions {
-
-    @Given("an example scenario")
+    private String name;
+    private String ask;
+    //First Scenario
+    @Given("my name is Shivaram")
     public void anExampleScenario() {
+        name="Shivaram";
     }
 
-    @When("all step definitions are implemented")
+    @When("I ask if it is Shivaram")
     public void allStepDefinitionsAreImplemented() {
+        ask = "Shivaram";
     }
 
-    @Then("the scenario passes")
-    public void theScenarioPasses() {
+    @Then("Success")
+    public String theScenarioPasses() {
+        return "Success";
     }
 
 }
