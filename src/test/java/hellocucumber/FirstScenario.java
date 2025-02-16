@@ -1,15 +1,14 @@
 package hellocucumber;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class StepDefinitions {
+public class FirstScenario {
     private String name;
     private String ask;
-    //First Scenario
+    
+    //First Sccenario
     @Given("my name is Shivaram")
     public void anExampleScenario() {
         name="Shivaram";
@@ -21,8 +20,10 @@ public class StepDefinitions {
     }
 
     @Then("Success")
-    public String theScenarioPasses() {
-        return "Success";
+    public void theScenarioPasses() {
+        System.out.println("Test passed successfully!");
     }
+
+    
 
 }
